@@ -1,6 +1,8 @@
-import type { Base } from '../types';
+import type { Base, DigitValidator } from '../types';
+
+const DIGITS = '0123456789abcdef';
 
 export const createDigitValidator =
-  (_base: Base) =>
-  (_char: string): boolean =>
-    false;
+  (base: Base): DigitValidator =>
+  (char: string): boolean =>
+    char.length === 1 && DIGITS.slice(0, base).includes(char.toLowerCase());
