@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && cp index.html dist/ && cp -r src/style dist/style",
     "watch": "tsc -p tsconfig.build.json --watch",
     "lint": "eslint .",
     "format": "prettier --write .",
