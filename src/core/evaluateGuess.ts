@@ -1,6 +1,14 @@
 import type { BullsCows } from '../types';
 
-export const evaluateGuess = (_secret: string, _guess: string): BullsCows => ({
-  bulls: 0,
-  cows: 0,
-});
+export const evaluateGuess = (secret: string, guess: string): BullsCows => {
+  const secretChars = [...secret.toLowerCase()];
+  const guessChars = [...guess.toLowerCase()];
+
+  const bulls = guessChars.filter((digit, i) => digit === secretChars[i]).length;
+
+  const cows = guessChars.filter(
+    (digit, i) => digit !== secretChars[i] && secretChars.includes(digit)
+  ).length;
+
+  return { bulls, cows };
+};
