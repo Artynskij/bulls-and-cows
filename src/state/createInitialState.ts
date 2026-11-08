@@ -1,5 +1,5 @@
-import type { GameState, Settings } from '../types';
-import { generateSecret } from '../core/generateSecret';
+import type { GameState, Settings } from '../types.js';
+import { generateSecret } from '../core/generateSecret.js';
 
 export const createInitialState = (settings: Settings): GameState => ({
   settings,

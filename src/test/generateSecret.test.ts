@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { generateSecret } from '../core/generateSecret';
+import { generateSecret } from '../core/generateSecret.js';
 
 const zeroRandom = () => 0;
 

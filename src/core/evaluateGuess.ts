@@ -1,4 +1,4 @@
-import type { BullsCows } from '../types';
+import type { BullsCows } from '../types.js';
 
 export const evaluateGuess = (secret: string, guess: string): BullsCows => {
   const secretChars = [...secret.toLowerCase()];

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { addAttempt } from '../state/addAttempt';
-import type { GameState } from '../types';
+import { addAttempt } from '../state/addAttempt.js';
+import type { GameState } from '../types.js';
 
 const baseState: GameState = {
   settings: { length: 3, base: 10 },

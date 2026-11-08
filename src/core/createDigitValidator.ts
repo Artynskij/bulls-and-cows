@@ -1,4 +1,4 @@
-import type { Base, DigitValidator } from '../types';
+import type { Base, DigitValidator } from '../types.js';
 
 const DIGITS = '0123456789abcdef';
 

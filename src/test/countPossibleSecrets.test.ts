@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { countPossibleSecrets } from '../core/countPossibleSecrets';
+import { countPossibleSecrets } from '../core/countPossibleSecrets.js';
 
 describe('countPossibleSecrets', () => {
   it('returns 1 when length is 0 (empty secret)', () => {

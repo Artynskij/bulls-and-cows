@@ -1,5 +1,5 @@
-import type { Base } from '../types';
-import { createDigitValidator } from './createDigitValidator';
+import type { Base } from '../types.js';
+import { createDigitValidator } from './createDigitValidator.js';
 
 export const isValidGuess = (guess: string, length: number, base: Base): boolean => {
   if (guess.length !== length) return false;

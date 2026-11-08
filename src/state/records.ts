@@ -1,4 +1,4 @@
-import type { RecordEntry } from '../types';
+import type { RecordEntry } from '../types.js';
 
 const STORAGE_KEY = 'bulls-and-cows:records';
 const MAX_RECORDS = 10;
